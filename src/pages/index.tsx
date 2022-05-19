@@ -36,6 +36,12 @@ export default function Home() {
               file as a mask for an image and some text. Text should be centered over the image and the size
               of the svg should respond to the quantity of text. The image, text, and text colour
               should be props.</p>
+            {/* 
+              Here we are looking to see if the candidate understands component design, Typescript 
+              fundamentals, and css techniques.  Will they define the prop types correctly? 
+              Can they pass a colour through to the styles? 
+              Can they mask an image and have the mask resize to the text contents?
+              */}
           </a>
           <a href="/checkout" className={styles.card}>
             <h2>2. Configure a checkout &rarr;</h2>
@@ -45,6 +51,11 @@ export default function Home() {
               and overall total being calculated. The user should be able to clear the cart of all items,
               with the totals updating. When the user clicks 'Buy' you should simulate an api post with a summary
               of the data. Add some styling to make the page more visually appealing.</p>
+            {/* 
+              Here we first see if they can fix some missing data errors. Will they defensively code, or just provide some
+              data? The map has no index set, and the first element has no key, will they set this? Then general 
+              configuration of the checkout.
+              */}
           </a>
           <a
             href="/"
@@ -56,6 +67,10 @@ export default function Home() {
               The user should be able to add and remove items with the checkout page,
               and find the quantity and totals updated on this page too.
             </p>
+            {/* 
+            Here we see how they tackle the storing of data throughout the app. Will they use Redux, 
+            or some other solution?
+            */}
           </a>
           <a
             href="/"
@@ -64,6 +79,10 @@ export default function Home() {
             <h2>4. Beautify &rarr;</h2>
             <p>Add some animations and styling of your choice to this page.
               The animations should only happen when the element is in the viewport.</p>
+            {/* 
+              Here we are looking to see some general creativity, but also will they implement a useRef 
+              with an intersection observer to know whether the element is in the viewport or not?
+              */}
           </a>
         </div>
         <h1>Finished? Next steps...</h1>
